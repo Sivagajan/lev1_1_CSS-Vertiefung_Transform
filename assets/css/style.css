@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.window{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 50px auto;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: crimson;
+    border-radius: 5px;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.box:hover{
+    animation-name: turn;
+}
+
+@keyframes turn{
+    0%{
+        transform: translateY(0%) rotateZ(-90deg);
+        /* einzeilig schreiben ansonsten wird das obere Transform vom unteren Transform überschrieben */
+    }
+
+    100%{
+        transform: translate(5
+        0%,200%) scale(2);
+    }
+
+}
